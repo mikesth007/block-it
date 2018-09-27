@@ -17,3 +17,4 @@ $wpdb->query( "DROP TABLE IF EXISTS ".$table_name );
 
 // delete the plugin options
 delete_option( 'block_spam_word_options' );
+delete_option( 'spam_db_version' );
