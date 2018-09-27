@@ -34,14 +34,11 @@ if ( is_admin() ) {
     require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
     require_once plugin_dir_path( __FILE__ ) . 'admin/settings-callbacks.php';
     require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
-    require_once plugin_dir_path( __FILE__ ) . 'admin/create-spam-table.php';
     require_once plugin_dir_path( __FILE__ ) . 'admin/spam-word-delete.php';
-
-    add_action('wp_ajax_spam_delete_action', 'delete_spam_data');
-    add_action('wp_ajax_nonpriv_spam_delete_action', 'delete_spam_data');
 }
 
 //include dependencies
+require_once plugin_dir_path( __FILE__ ) . 'admin/create-spam-table.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/core-functions.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/spam-words-util.php';
 

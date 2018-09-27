@@ -80,7 +80,7 @@ function block_spam_word_display_settings_page() {
             $results = $wpdb->get_results("SELECT id,word,time FROM $table_name");
             if (!empty($results)) {
                 echo "<table width='80%' border='0' class='block-spam-word-table'>";
-                echo "<tr><th>S.N.</th><th>Word</th><th>Updated On</th><th>Action</th></tr>";
+                echo "<tr><th>S.N.</th><th>Word</th><th>Created On</th><th>Action</th></tr>";
                 echo "<tbody>";
                 $number = 1;
                 foreach ($results as $row) {
