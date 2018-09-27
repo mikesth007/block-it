@@ -1,15 +1,39 @@
-table {
-
-}
-
-.block-spam-word-form {
-
-}
-
-.block-spam-word-form input[type="submit"] {
-    width: 6em;
+#block-spam-word-form input[type="submit"] {
+    width: 120px;
 }
 
 .success-message {
     color:green;
+}
+
+.block-spam-word-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.block-spam-word-table td, .block-spam-word-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.block-spam-word-table tbody tr:nth-child(even){
+    background-color: #D2D2D2;
+}
+
+.block-spam-word-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.block-spam-word-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.block-spam-word-table button{
+    color: red;
 }

@@ -10,15 +10,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function load_custom_wp_admin_style() {
-    wp_enqueue_style( 'myplugin', plugin_dir_url( dirname( __FILE__ ) ) . 'public/css/block-spam-word-admin.css', array(), null, 'screen' );
+    wp_enqueue_style( 'myplugin_block_spam_words_css', plugin_dir_url( dirname( __FILE__ ) ) . 'public/css/block-spam-word-admin.css', array(), null, 'screen' );
+    wp_enqueue_script( 'myplugin_block_spam_words_js', plugin_dir_url( dirname( __FILE__ ) ) . 'public/js/block-spam-word-admin.js', array(), null, true );
 
 }
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 
 function wordFilter($text, $keepFirstLetter, $replaceWith)
 {
-    $default_filter = get_all_default_spam_words();
-    $filter_terms = array_merge($default_filter, get_filter_words_from_db());
+    $filter_terms = get_all_default_spam_words();
+    foreach (get_filter_words_from_db() as $row) {
+        array_push($filter_terms, $row->word);
+    }
     $filtered_text = $text;
 
 
