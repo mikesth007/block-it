@@ -1,5 +1,5 @@
 === Block Spam Word ===
-Contributors: mikesth007
+Contributors: maikalshrestha
 Donate link: http://donatethem.com/
 Tags: comments, spam, post, block, invalid, inappropriate,
 Requires at least: 3.0.1

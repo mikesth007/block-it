@@ -2,13 +2,12 @@
 
 /**
  * Plugin Name:       Block Spam Word
- * Plugin URI:
- * Description:       This plugin helps the admin to block spam/ inappropriate words in the website either in comments, posts or page
+ * Plugin URI:        https://profiles.wordpress.org/maikalshrestha
+ * Description:       This plugin helps the admin to block spam/ inappropriate words in the website either in comments, posts or both
  * Version:           1.0
  * Text Domain        block-spam-word
- * Domain Path        /languages
  * Author:            Maikal Shrestha
- * Author URI:
+ * Author URI:        https://profiles.wordpress.org/maikalshrestha
  * License:           GPL-2.0+
  */
 
