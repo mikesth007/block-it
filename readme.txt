@@ -35,18 +35,17 @@ download the zip file and unzip in the plugins directory.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= What does this plugin do? =
+This plugin provides the ability to block words that are offensive or inappropriate and has bad meanings.
 
-An answer to that question.
+= Does it change the data in the database? =
+No, it does not. It will only replace them before reading. If you deactivate it, everything will remain same for your data.
 
-= What about foo bar? =
-
-Answer to foo bar dilemma.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to admin_settings.(png|jpg).
-2. This is the second screen shot
+1. screenshot-1: Screenshot for Admin Settings to customize.
+2. screenshot-2: Screenshot for Sample Blocked Comment.
 
 == Changelog ==
 
