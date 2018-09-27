@@ -1,0 +1,15 @@
+table {
+
+}
+
+.block-spam-word-form {
+
+}
+
+.block-spam-word-form input[type="submit"] {
+    width: 6em;
+}
+
+.success-message {
+    color:green;
+}
